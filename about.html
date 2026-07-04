@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akuchinyere Chioma | About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        :root { --primary: #0ea5e9; }
+        .tail-container { font-family: 'Inter', system_ui, sans-serif; }
+        .glass { background:rgba(255, 255, 255, 0.08); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.15); }
+        .nav-link { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover { color: #67e8f9; transform: translateY(-2px); }
+        .section-header { font-family: 'Space Grotesk', sans-serif; }
+        .active { color: #67e8f9 !important; position: relative; }
+        .active:after { content: ''; position: absolute; bottom: -2px; left: 0; width: 100%; height: 2px; background: #67e8f9; }
+    </style>
+    </head>
+<body class="tail-container bg-zinc-950 text-white">
+    <!-- NAVBAR (same as index.html but About is active) -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass py-5">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-sky-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-inner">AC</div>
+                <div><span class="font-semibold text-2xl tracking-tighter">Akuchinyere</span><span class="text-sky-400 font-medium">Chioma</span></div>
+            </div>
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About Me</a>
+                <a href="expertise.html" class="nav-link">Expertise</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://drive.google.com/file/d/1EXAMPLE-CV-LINK/view" target="_blank" class="hidden sm:flex items-center gap-2 px-6 py-3 bg-white text-zinc-900 rounded-2xl font-semibold text-sm hover:bg-white/90 transition-all"><i class="fas fa-download"></i><span>Download CV</span></a>
+                <button onclick="toggleMobileMenu()" class="md:hidden w-11 h-11 glass rounded-2xl flex items-center justify-center text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden glass mt-4 mx-6 rounded-3xl py-6 px-8">
+            <div class="flex flex-col gap-6 text-lg font-medium">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="expertise.html">Expertise</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://drive.google.com/file/d/1EXAMPLE-CV-LINK/view" target="_blank" class="mt-4 flex items-center justify-center gap-3 bg-sky-500 text-white py-4 rounded-2xl font-semibold"><i class="fas fa-download"></i> Download CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT ME SECTION – Name Outside the Box -->
+<section class="pt-24 pb-20 bg-zinc-950">
+    <div class="max-w-4xl mx-auto px-6">
+        
+        <!-- Name as Section Header (Outside the Box) -->
+        <div class="text-center mb-12">
+            <h1 class="section-header text-5xl md:text-6xl font-semibold tracking-tighter leading-none">
+                Akuchinyere Chioma
+            </h1>
+        </div>
+
+        <!-- Elegant Shadow Box Container (Bio only) -->
+        <div class="glass rounded-3xl p-12 md:p-16 shadow-2xl shadow-sky-500/10 border border-white/10 
+                    backdrop-blur-3xl relative overflow-hidden">
+            
+            <!-- Subtle inner glow -->
+            <div class="absolute inset-0 bg-gradient-to-br from-sky-400/5 to-transparent pointer-events-none"></div>
+            
+            <div class="relative z-10">
+                <!-- Professional About Me Text -->
+                <div class="prose prose-invert max-w-none text-lg leading-relaxed text-white/90">
+                    <p class="mb-6">With over 1 year of experience as a software engineer, I specialize in developing reliable and scalable web and mobile applications that address real-world challenges. My expertise centers on full-stack development and the seamless integration of AI-driven solutions that deliver measurable business impact.</p>
+                    
+                    <p>I am committed to clean architecture and user-centered design principles, transforming complex technical problems into sophisticated, high-performance software used by thousands of users worldwide. Every project is approached with precision, attention to detail, and a dedication to creating solutions of lasting value.</p>
+                </div>
+
+                <!-- Professional closing -->
+                <div class="mt-12 flex items-center gap-4 text-white/60 text-sm">
+                    <div class="h-px w-12 bg-white/30"></div>
+                    <span>Lagos, Nigeria • Open to strategic opportunities worldwide</span>
+                    <div class="h-px w-12 bg-white/30"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FINAL CTA + FOOTER (same as index.html) -->
+    <!-- [Copy the entire FINAL CTA section + FOOTER from index.html here] -->
+    <!-- (To keep this short, just paste the same <section class="py-20 bg-gradient-to-r..."> and <footer> from the first file) -->
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+
+               
+     
+
+                
+ 
+
+            
+        
+
+    

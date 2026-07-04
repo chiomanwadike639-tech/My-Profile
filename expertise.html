@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akuchinyere Chioma | Expertise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root { --primary: #0ea5e9; }
+        
+        .tail-container { font-family: 'Inter', system_ui, sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.15); }
+        .nav-link { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover { color: #67e8f9; transform: translateY(-2px); }
+        .section-header { font-family: 'Space Grotesk', sans-serif; }
+        .active { color: #67e8f9 !important; position: relative; }
+        .active:after { content: ''; position: absolute; bottom: -2px; left: 0; width: 100%; height: 2px; background: #67e8f9; }
+    </style>
+</head>
+<body class="tail-container bg-zinc-950 text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass py-5">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-sky-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-inner">AC</div>
+                <div>
+                    <span class="font-semibold text-2xl tracking-tighter">Akuchinyere</span>
+                    <span class="text-sky-400 font-medium">Chioma</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="expertise.html" class="nav-link active">Expertise</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://drive.google.com/file/d/1EXAMPLE-CV-LINK/view" target="_blank"
+                   class="hidden sm:flex items-center gap-2 px-6 py-3 bg-white text-zinc-900 rounded-2xl font-semibold text-sm hover:bg-white/90 transition-all">
+                    <i class="fas fa-download"></i>
+                    <span>Download CV</span>
+                </a>
+                <button onclick="toggleMobileMenu()" class="md:hidden w-11 h-11 glass rounded-2xl flex items-center justify-center text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden glass mt-4 mx-6 rounded-3xl py-6 px-8">
+            <div class="flex flex-col gap-6 text-lg font-medium">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="expertise.html">Expertise</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="https://drive.google.com/file/d/1EXAMPLE-CV-LINK/view" target="_blank"
+                   class="mt-4 flex items-center justify-center gap-3 bg-sky-500 text-white py-4 rounded-2xl font-semibold">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- EXPERTISE CONTENT -->
+    <section class="pt-24 pb-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline px-5 py-2 text-xs font-medium tracking-[2px] bg-white/10 rounded-full">WHAT I DO BEST</div>
+                <h1 class="section-header text-5xl font-semibold tracking-tighter mt-4">Core Expertise</h1>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass rounded-3xl p-10 group hover:scale-[1.02] transition-all">
+                    <div class="w-14 h-14 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mb-8 text-4xl">🌐</div>
+                    <h3 class="text-3xl font-semibold mb-4">Full-Stack Web Development</h3>
+                    <p class="text-white/70 leading-relaxed">Modern, responsive web applications using React, Next.js, Node.js, and TypeScript. From landing pages to complex SaaS platforms.</p>
+                    <div class="mt-8 flex flex-wrap gap-2">
+                        <span class="px-4 py-1 bg-white/10 rounded-2xl text-xs">React</span>
+                        <span class="px-4 py-1 bg-white/10 rounded-2xl text-xs">Next.js</span>
+                        <span class="px-4 py-1 bg-white/10 rounded-2xl text-xs">Tailwind</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass rounded-3xl p-10 group hover:scale-[1.02] transition-all">
+                    <div class="w-14 h-14 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl flex items-center justify-center mb-8 text-4xl">📱</div>
+                    <h3 class="text-3xl font-semibold mb-4">Mobile &amp; Cross-Platform Apps</h3>
+                    <p class="text-white/70 leading-relaxed">Native and hybrid mobile experiences with React Native and Flutter. Beautiful, performant apps that users love.</p>
+                    <div class="mt-8 flex flex-wrap gap-2">
+                        <span class="px-4 py-1 bg-white/10 rounded-2xl text-xs">React Native</span>
+                        <span class="px-4 py-1 bg-white/10 rounded-2xl text-xs">Flutter</span>
+                        <span class="px-4 py-1 bg-white/10 rounded-2xl text-xs">iOS &amp; Android</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass rounded-3xl p-10 group hover:scale-[1.02] transition-all">
+                    <div class="w-14 h-14 bg-gradient-to-br from-violet-400 to-purple-500 rounded-2xl flex items-center justify-center mb-8 text-4xl">🤖</div>
+                    <h3 class="text-3xl font-semibold mb-4">AI &amp; Machine Learning Integration</h3>
+                    <p class="text-white/70 leading-relaxed">Embedding intelligent features using Python, TensorFlow, and OpenAI APIs. From recommendation engines to smart automation.</p>
+                    <div class="mt-8 flex flex-wrap gap-2">
+                        <span class="px-4 py-1 bg-white/10 rounded-2xl text-xs">Python</span>
+                        <span class="px-4 py-1 bg-white/10 rounded-2xl text-xs">OpenAI</span>
+                        <span class="px-4 py-1 bg-white/10 rounded-2xl text-xs">AWS SageMaker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-20 bg-gradient-to-r from-sky-950 to-zinc-950">
+        <div class="max-w-2xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-semibold tracking-tighter mb-6">Let's build something extraordinary together</h2>
+            <p class="text-white/70 mb-10">Whether you need a full product built from scratch or expert consulting on your current tech stack — I'm ready to help.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:akuchinyere.chioma@example.com" 
+                   class="px-10 py-5 bg-white text-zinc-950 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3 hover:scale-105 transition-transform">
+                    Get In Touch
+                </a>
+                <a href="https://drive.google.com/file/d/1EXAMPLE-CV-LINK/view" 
+                   target="_blank"
+                   class="px-10 py-5 glass border border-white/30 rounded-2xl font-semibold text-lg flex items-center justify-center gap-3">
+                    <i class="fas fa-download"></i> Download Full CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-8 h-8 bg-white rounded-2xl flex items-center justify-center text-black font-bold">AC</div>
+                    <span class="text-2xl font-semibold">Akuchinyere Chioma</span>
+                </div>
+                <p class="text-white/50 max-w-xs">Lagos, Nigeria • Passionate about code, design systems, and meaningful technology.</p>
+                <div class="mt-12 text-xs text-white/40">© 2026 Akuchinyere Chioma. All rights reserved.</div>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-8 text-sm">
+                <div>
+                    <div class="font-medium mb-4 text-white/70">Navigation</div>
+                    <div class="space-y-3 text-white/60">
+                        <a href="index.html" class="block hover:text-white">Home</a>
+                        <a href="about.html" class="block hover:text-white">About</a>
+                        <a href="expertise.html" class="block hover:text-white">Expertise</a>
+                        <a href="portfolio.html" class="block hover:text-white">Portfolio</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-medium mb-4 text-white/70">Connect</div>
+                    <div class="space-y-3 text-white/60">
+                        <a href="#" class="block hover:text-white">LinkedIn</a>
+                        <a href="#" class="block hover:text-white">Twitter / X</a>
+                        <a href="#" class="block hover:text-white">GitHub</a>
+                        <a href="#" class="block hover:text-white">Instagram</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-medium mb-4 text-white/70">Legal</div>
+                    <div class="space-y-3 text-white/60">
+                        <a href="#" class="block hover:text-white">Privacy</a>
+                        <a href="#" class="block hover:text-white">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
